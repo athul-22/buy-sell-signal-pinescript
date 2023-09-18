@@ -4,6 +4,12 @@ strategy(title="Range Filter Buy and Sell 5min [Strategy]", overlay=true, commis
 // === INPUT BACKTEST RANGE ===
 useDate = input(true,     title='---------------- Use Date ----------------', type=bool)
 FromMonth = input(defval = 7, title = "From Month", minval = 1, maxval = 12)
+FromDay   = input(defval = 25, title = "From Day", minval = 1, maxval = 31)
+FromYear  = input(defval = 2019, title = "From Year", minval = 2017)
+ToMonth   = input(defval = 1, title = "To Month", minval = 1, maxval = 12)
+ToDay     = input(defval = 1, title = "To Day", minval = 1, maxval = 31)
+ToYear    = input(defval = 9999, title = "To Year", minval = 2017)
+
 
 
 sources = input(defval=close, title="Source")
