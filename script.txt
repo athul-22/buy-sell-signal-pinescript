@@ -1,6 +1,8 @@
 //@version=3
 strategy(title="Range Filter Buy and Sell 5min [Strategy]", overlay=true, commission_type=strategy.commission.percent, commission_value=0.025, default_qty_type=strategy.cash, default_qty_value=10000, initial_capital=10000, slippage=0)
 
+// === INPUT BACKTEST RANGE ===
+useDate = input(true,     title='---------------- Use Date ----------------', type=bool)
 
 
 
